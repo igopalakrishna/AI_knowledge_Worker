@@ -1,10 +1,10 @@
 name: Run AI Worker Script
 
 on:
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
   push:
     branches:
-      - main  # Runs when code is pushed to the main branch
+      - main
 
 jobs:
   run_script:
@@ -21,6 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run AI Worker Script
