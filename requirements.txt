@@ -2,3 +2,8 @@ python-dotenv
 numpy
 pandas
 openai
+gradio
+openai-whisper
+pydub
+ffmpeg-python
+torch
