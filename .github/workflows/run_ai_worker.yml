@@ -1,0 +1,27 @@
+name: Run AI Worker Script
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+  push:
+    branches:
+      - main  # Runs when code is pushed to the main branch
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run AI Worker Script
+        run: python ai_worker.py
