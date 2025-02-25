@@ -26,3 +26,5 @@ jobs:
 
       - name: Run AI Worker Script
         run: python ai_worker.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
