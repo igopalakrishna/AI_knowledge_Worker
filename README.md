@@ -122,10 +122,3 @@ This project is licensed under the MIT License.
 Contact
 
 For inquiries or collaboration opportunities, please reach out via LinkedIn or email.
-
-This README is now ready to be uploaded as README.md to your GitHub repository.
-
-
----
-
-This version is in **raw Markdown format** that you can directly copy and paste into your `README.md
