@@ -10,6 +10,7 @@ python-dotenv
 langchain
 langchain-openai
 langchain-chroma
+langchain-community
 
 # Vector database
 chromadb
